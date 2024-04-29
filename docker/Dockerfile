@@ -7,11 +7,6 @@
 # ADDはtarなどの圧縮ファイルをコピーする時に使う（コピー時に自動で解凍される）
 
 FROM ubuntu:latest
-#RUN apt-get update && apt-get install -y \
-#    curl \
-#    nginx \
-#    cvs
-#RUN mkdir new_dir
-#COPY something new_dir/
-ADD compressed.tar /
-CMD ["ls"]
+RUN touch test
+ENTRYPOINT ["ls"]
+CMD ["--help"]
