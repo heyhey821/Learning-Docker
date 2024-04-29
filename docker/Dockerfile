@@ -7,6 +7,4 @@
 # ADDはtarなどの圧縮ファイルをコピーする時に使う（コピー時に自動で解凍される）
 
 FROM ubuntu:latest
-RUN mkdir sample_folder
-WORKDIR /sample_folder
-RUN touch testok
+RUN mkdir new_dir
